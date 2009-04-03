@@ -1,0 +1,6 @@
+Revision history for Perl extension Graph::Statistics.
+
+0.01  Fri Apr  3 16:48:37 2009
+	- original version; created by h2xs 1.23 with options
+		-AXc -n Graph::Statistics
+
