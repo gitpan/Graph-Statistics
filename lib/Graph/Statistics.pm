@@ -29,7 +29,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 # Preloaded methods go here.
@@ -150,7 +150,7 @@ __END__
 
 =head1 NAME
 
-Graph::Statistics - Perl extension for calculating network constraint
+Graph::Statistics - Perl extension for calculating network constraint and other network statistics.
 
 =head1 SYNOPSIS
 
@@ -169,7 +169,7 @@ Graph::Statistics - Perl extension for calculating network constraint
   # not needed if you are only creating the graph once
   flushCache();
 
-  # print out Burt Constraint value for each node
+  # print out Burt network constraint value for each node
   foreach $f ( keys %g ) {
     print "$f,", constraint(\%g,$f), "\n";
   }
@@ -189,7 +189,7 @@ Calculates Burt's network constraint value on nodes within a hash based network 
 
 =item * constraint(hashreference, nodeidentifier)
 
-returns the constraint
+returns the network constraint
 
 =item * c(hash reference, node identifier a, node identifier b)
 
